@@ -6,7 +6,7 @@ import { cryptoReducerType } from "./currency-convertor.type"
 const CurrencyconvertorComponentHelper = () => {
     const [formvalues, setFormvalues] = useState({
         Currency: 'usd',
-        Crypto: '',
+        Crypto: 'btc',
         Amount: 1
     })
     const [submit, setSubmit] = useState(false)

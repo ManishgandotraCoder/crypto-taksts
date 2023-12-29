@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import './currency-convertor.css'
 import { currencyConvertorType } from "./currency-convertor.type"
 const Input = React.lazy(() => import("../../components/input/input"));
@@ -15,9 +15,6 @@ const CurrencyConvertorContainerComponent = ({ submit, handleSubmit, formvalues,
         { name: "Binance Coin", id: "bnb" },
 
     ]
-    useEffect(() => {
-        console.log(amount);
-    }, [])
 
     return (
         <div className="signupSection">
@@ -38,7 +35,9 @@ const CurrencyConvertorContainerComponent = ({ submit, handleSubmit, formvalues,
                         <Button handleSubmit={handleSubmit} />
                     </li>
                     <li>
-                        {submit && <span>{formvalues.Amount} {formvalues.Crypto} costs {amount} {formvalues.Currency}'s</span>}
+                        {submit && formvalues.Amount
+                            && formvalues.Crypto
+                            && formvalues.Currency && <span>{formvalues.Amount} {formvalues.Crypto} costs {amount} {formvalues.Currency}'s</span>}
                     </li>
                 </ul>
             </form>
