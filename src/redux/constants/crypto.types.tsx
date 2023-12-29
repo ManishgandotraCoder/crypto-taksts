@@ -1,0 +1,4 @@
+export default {
+    "GET_CRYPTO": "GET_CRYPTO",
+    "CONVERT_CRYPTO_CURRENCY": "CONVERT_CRYPTO_CURRENCY",
+}

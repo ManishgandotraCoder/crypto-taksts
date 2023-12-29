@@ -1,0 +1,40 @@
+.inputFields {
+    margin: 15px 0;
+    font-size: 16px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid rgba(10, 180, 180, 1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: rgba(20, 20, 20, .2);
+    color: white;
+    outline: none;
+}
+
+.inputFields:invalid {
+    border: 1px solid #fa0303;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.noBullet {
+    list-style-type: none;
+    padding: 0;
+}
+
+.error {
+    color: #fa0303;
+}
+
+option {
+    background-color: rgba(10, 180, 180, 1);
+    cursor: pointer;
+
+    &:hover {
+        color: rgba(10, 180, 180, 1);
+        background-color: white;
+        cursor: pointer;
+    }
+}
