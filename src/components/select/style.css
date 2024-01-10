@@ -1,8 +1,9 @@
-.inputFields {
+.selectFields {
     margin: 15px 0;
     font-size: 16px;
     padding: 10px;
-    width: 250px;
+    cursor: pointer;
+    width: 310px;
     border: 1px solid rgba(10, 180, 180, 1);
     border-top: none;
     border-left: none;
@@ -12,11 +13,8 @@
     outline: none;
 }
 
-.inputFields:invalid {
+.selectFields:invalid {
     border: 1px solid #fa0303;
-    border-top: none;
-    border-left: none;
-    border-right: none;
 }
 
 .noBullet {

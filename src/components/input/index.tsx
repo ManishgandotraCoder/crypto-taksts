@@ -1,5 +1,5 @@
 import React from "react"
-import './input.css'
+import './style.css'
 import { inputComponentType } from "./input.type"
 const Input = ({ submit, value, changeValues, title, type }: inputComponentType) => {
     return (<>

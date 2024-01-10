@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Routes, Route, Outlet, Link } from 'react-router-dom'
 import routes from './routes/route'
-const Loader = React.lazy(() => import("./components/loader/loader.helper"));
+const Loader = React.lazy(() => import("./components/loader"));
 
 const App: React.FunctionComponent = () => {
 
